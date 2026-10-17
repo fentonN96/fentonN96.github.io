@@ -1,5 +1,6 @@
 # Computer Science ePortfolio
 **By Natalie Fenton**
+
 Computer Science | Software Engineering Concentration
 
 ---
