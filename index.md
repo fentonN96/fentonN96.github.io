@@ -35,17 +35,17 @@ The enhanced artifact's CRUD module had been moved from a Codio environment to a
 
 **Key Enhancements:**
 
-Environment-based database configuration
+- Environment-based database configuration
 
-MongoDB authentication
+- MongoDB authentication
 
-Record validation through data_check()
+- Record validation through data_check()
 
-Structured logging
+- Structured logging
 
-Improved exception handling
+- Improved exception handling
 
-CRUD unit testing
+- CRUD unit testing
 
 ### Skills Demonstrated
 One of the biggest challenges I had with this enhancement was getting MongoDB to connect correctly after moving away from the Codio environment. When I first tried using the .env file, Python kept loading None for every variable, and my connection string came out as mongodb://None:None@None:None. At first, I thought I had only named the variables incorrectly, so I changed them to match what my CRUD module expected. However, it still returned None, and I eventually found that Visual Studio Code was running my test from a different working directory and couldn't find my .env file. Fixing these problems helped me better understand how the Python module, environment configuration, and MongoDB connection all have to work together.
