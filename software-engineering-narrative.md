@@ -10,20 +10,30 @@ For artifact one in my software design and engineering enhancement, I was workin
 I wanted this artifact on my ePortfolio because I have confidence to demonstrate and explain my mindset on software engineering, backend development, database integration, and having secure, maintainable code. Making artifact improvements has pushed me to finally explore outside of the Codio environment and into a real MongoDB Community Server installation on my own computer. Included: 
 	
 •	Installing and running MongoDB as a local service
+
 •	Instead of Codio’s no-auth sandbox, had to use actual authentication
+
 •	Created a root admin user and a project-specific AAC user
+
 •	Built safe connections when strings use environment variables
+
 •	Updated the CRUD module to use .env
+
 •	Added logging to track and debug in the structure
+
 •	Implemented validation and error handling 
 
 Some of these enhancements show my ability to work in real backend systems, secure database access, and implement industrial software engineering practices. This improved artifact will be closer to standards in the computer science field and show my readiness for real-world application work. 
 
 With these enhancements, I have shown explanations and demonstrations in progress to several outcomes in the Computer Science program: 
 •	Based on my three categories, I have inputted secure database authentication, code layout improvement, added logging, and implemented validation. With these changes, this will show my ability to use well-known techniques and tools to give value through improved backend functionality. 
+
 •	Having a security mindset is like when I moved from Codio’s no-auth environment to a secure local MongoDB installation; I needed to have authentication and user roles. and connection security. I had to make separate admin and project users, which made me acknowledge the design was specifically chosen to reflect awareness of security.
+
 •	In the algorithmic principles and problem-solving, I have demonstrated debugging authentication failures, restructuring logic for updates, and input validation. 
+
 •	Adds professional communication since the narrative and enhancements show how the artifact is explained and demonstrated clearly. 
+
 With these outcomes planned from Module One, I have met these requirements in software engineering and secure design so far. I acknowledge I do not need major updates, but being able to improve the database authentication and configurations has been my stronger suit in my artifact than I had originally thought. 
 
 Going through this enhancement definitely required more work on my part, but it was mainly due to noticing that my past classes had not taught me the full process of installing and configuring MongoDB locally. I had to backtrack in my CS-340 course and realized I had used Codio’s sandbox with no authentication, no user creation, and no local installation. I am currently taking my Full-Stack Development course, and we are now using mock JSON data instead of a real database; I had yet to learn how to connect an application to a real MongoDB server, which made it a struggle for me.  
