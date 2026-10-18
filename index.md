@@ -13,6 +13,9 @@ In this code review, I explain my skills by improving my original artifacts by c
 [Watch Video Capstone Code Review](https://youtu.be/_UZfxi53GT8)
 
 ## Software Design & Engineering 
+**Artifact:** Python CRUD Module
+
+**Course:** CS 340: Client/Server Development 
 
 ## Algorithms & Data Structures 
 
