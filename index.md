@@ -21,6 +21,7 @@ Python CRUD Module project in CS 340: Client/Server Development has shown how an
 
 ### Original Artifact
 The original artifact had the basic CRUD operations needed to create, read, update, and delete animal records within a MongoDB database. Although the program was functional for the original CS 340 assignment, revisiting the code showed areas that could be improved in its structure, security, validation, logging, and testing. One huge issue was that the database credentials were hardcoded directly into the original source code. Reviewing these limitations gave me the starting point for the Software Design and Engineering enhancement.
+
 **Security Note:"" Credentials were redacted due to public portfolio publication exposure. Despite the sensitive credential values, the files still represent the original implementations.
 
 ### Enhanced Artifact 
@@ -29,10 +30,15 @@ The enhanced artifact's CRUD module had been moved from a Codio environment to a
 Key Enhancements:
 
 Environment-based database configuration
+
 MongoDB authentication
+
 Record validation through data_check()
+
 Structured logging
+
 Improved exception handling
+
 CRUD unit testing
 
 ### Skills Demonstrated
@@ -41,13 +47,19 @@ One of the biggest challenges I had with this enhancement was getting MongoDB to
 **Technical Skills:**
 
 - Python and PyMongo
+  
 - MongoDB authentication
+  
 - Environment variables
+
 - Input validation and error handling
+  
 - Logging
+  
 - CRUD unit testing
 
 ### Enhancement Narrative
+[Read the Software Design & Engineering Enhancement Narrative](software-engineering-narrative.md)
 
 ## Algorithms & Data Structures 
 
