@@ -3,7 +3,7 @@
 **Artifact:** Python CRUD Module
 
 **Course:** CS 340: Client/Server Development
-Milestone Two Narrative
+
 
 For artifact one in my software design and engineering enhancement, I was working on the Python CRUD module that was a project in my previous class, CS 340: Client/Server Development. The purpose of this project was to make it perform CRUD (Create, Read, Update, Delete) operations that worked with a MongoDB database. I realized this original version was developed in Codio’s sandbox environment, and I had to switch from a preconfigured sandbox to a real database (MongoDB). The original artifact had shown some basic CRUD functions but was missing modularity, logging, validation, secure coding, and real-world database setup. I have selected this for my enhancement in the capstone so that I can demonstrate my foundation in backend skills: having a database connected to an application and then being able to perform structured operations on stored data.
 	
