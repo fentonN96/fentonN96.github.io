@@ -119,6 +119,7 @@ I also got more experience with memory management by replacing the raw pointer w
 - Smart pointers and memory management
 
 ### Enhancement Narrative 
+[Read the Algorithms and Data Structure Enhancement Narrative](algorithms-narrative.md)
 
 ## Databases 
 
