@@ -68,6 +68,57 @@ One of the biggest challenges I had with this enhancement was getting MongoDB to
 [Read the Software Design & Engineering Enhancement Narrative](software-engineering-narrative.md)
 
 ## Algorithms & Data Structures 
+**Artifact:**: Course Planner
+
+**Course:** CS 300: Data Structures and Algorithms 
+The Course Planner project was made in CS 300 DSA: Analysis and Design to store course information and allow the user to view the course list or search for a specific course and its prerequisites. I chose this artifact because when I originally completed the course, I was still new to sorting and searching algorithms in C++. Going back to this project allowed me to look at the same program again with more experience and think more carefully about how the data structure and search algorithm work together.
+
+### Original Artifact
+The original Course Planner stored the course objects in a vector and then searched through the courses using a linear search. The program would check the courses one by one till it came across the user's request. When making this project, I was still trying to learn about different searching and sorting techniques in C++; so the linear search was easier for me to understand and implement. When I look back at it now, I can see how this approach works for a small amount of course data, but it would require more searching as additional courses were added and would make the program slower. The original version also used a raw pointer for the data structure and had limited input validation and error handling. These were areas I wanted to go back to because I now had a better understanding of algorithm efficiency, memory management, and how the program could handle incorrect user input.
+
+### Enhanced Artifact
+One of the main improvements I made during this course, I replaced the linear search with a binary search. The original linear search had a time complexity of O(n), while the binary search reduces the search time to O(log n). I also had to make sure the course data was sorted because binary search depends on the data being in order. For this part, I used a lambda comparator with the vector to organize the courses by course number.
+
+I also added input validation to check the course number before searching for it and included exception handling for cases where a course could not be found. Another change was replacing the raw pointer with unique_ptr and make_unique. This allowed the program to manage the memory automatically instead of relying on the manual new and delete approach used in the original version.
+
+**Key Enhancements:**
+
+- Replaced linear search O(n) with binary search O(log n)
+
+- Used a sorted vector to support binary search
+
+- Added a lambda comparator for sorting course numbers
+
+- Added course-number input validation
+
+- Added exception handling for unsuccessful searches
+
+- Replaced a raw pointer with unique_ptr and make_unique
+
+- Added additional comments to explain the algorithm and program structure
+
+### Skills Demonstrated 
+One of the new things I had to learn was that I could not just replace linear search with binary search; there was a format I needed to follow first. The course data needed to be sorted first, which helped me understand how the algorithm and data structure depend on each other. I also started thinking more about scalability. Even though the Course Planner only has a small number of courses right now, binary search would be more useful as the amount of data grows.
+
+I also got more experience with memory management by replacing the raw pointer with unique_ptr and make_unique. Adding validation and exception handling made me think beyond whether the search simply worked and more about how the program should respond when something goes wrong. Overall, this enhancement helped me understand how several smaller design choices can work together to improve the program
+
+**Technical Skills:**
+
+- C++
+  
+- Vectors and data organization
+  
+- Algorithm complexity analysis
+  
+- Lambda expressions and sorting
+  
+- Input Validation
+  
+- Exception handling
+  
+- Smart pointers and memory management
+
+### Enhancement Narrative 
 
 ## Databases 
 
