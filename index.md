@@ -30,6 +30,7 @@ The original artifact had the basic CRUD operations needed to create, read, upda
 The enhanced artifact's CRUD module had been moved from a Codio environment to an authenticated MongoDB installation on my computer. I replaced the hardcoded connection information with environment variables and had to troubleshoot mismatched .env names and the working directory used by Visual Studio Code. I also added the data_check() method, structured logging, clearer error handling, and unit tests for all four CRUD operations. These changes made the module easier to troubleshoot, safer to configure, and more reliable when working with animal records.
 
 [View Enhanced CRUD Source Code](CRUD_Python_Module.py)
+
 [View Unit Tests](unit_tests.py)
 
 Key Enhancements:
