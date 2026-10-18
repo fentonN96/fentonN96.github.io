@@ -211,12 +211,4 @@ I also had to make decisions without having access to my original AAC dataset; m
 
 ### Enhancement Narrative 
 
-
-
-
-
-
- 
-
-
-
+[Read the Database Enhancement Narrative](database-narrative.md)
