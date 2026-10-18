@@ -76,8 +76,12 @@ The Course Planner project was made in CS 300 DSA: Analysis and Design to store 
 ### Original Artifact
 The original Course Planner stored the course objects in a vector and then searched through the courses using a linear search. The program would check the courses one by one till it came across the user's request. When making this project, I was still trying to learn about different searching and sorting techniques in C++; so the linear search was easier for me to understand and implement. When I look back at it now, I can see how this approach works for a small amount of course data, but it would require more searching as additional courses were added and would make the program slower. The original version also used a raw pointer for the data structure and had limited input validation and error handling. These were areas I wanted to go back to because I now had a better understanding of algorithm efficiency, memory management, and how the program could handle incorrect user input.
 
+[View Original Course Planner C++](Algorithms_Data_Structures_Original/ProjectTwo.cpp) 
+
 ### Enhanced Artifact
 One of the main improvements I made during this course, I replaced the linear search with a binary search. The original linear search had a time complexity of O(n), while the binary search reduces the search time to O(log n). I also had to make sure the course data was sorted because binary search depends on the data being in order. For this part, I used a lambda comparator with the vector to organize the courses by course number.
+
+[View Enhanced Course Planner C++](Algorithms_Data_Structures_Enhanced/ProjectTwoCapstone.cpp)
 
 I also added input validation to check the course number before searching for it and included exception handling for cases where a course could not be found. Another change was replacing the raw pointer with unique_ptr and make_unique. This allowed the program to manage the memory automatically instead of relying on the manual new and delete approach used in the original version.
 
