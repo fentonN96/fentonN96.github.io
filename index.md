@@ -33,7 +33,7 @@ The enhanced artifact's CRUD module had been moved from a Codio environment to a
 
 [View Unit Tests](unit_tests.py)
 
-Key Enhancements:
+**Key Enhancements:**
 
 Environment-based database configuration
 
