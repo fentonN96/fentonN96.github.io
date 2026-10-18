@@ -127,3 +127,96 @@ I also got more experience with memory management by replacing the raw pointer w
 
 ## Databases 
 
+**Artifact:** Python CRUD Module
+
+**Course:** CS 340: Client/Server Development 
+
+The Database enhancement uses the same Python CRUD Module from CS 340: Client/Server Development that I previously used for my Software Design and Engineering enhancement. Instead of starting over with the original project, I continued working from the improved version so I could keep changes I had already made, such as environment-based configuration, logging, validation, and better error handling. For this category, I wanted to focus more specifically on how the application communicates with MongoDB and how the database operations could become safer, more efficient, and more reliable.
+
+When I looked at the project from more of a database perspective, I noticed areas that I had not focused on during the Software Engineering enhancement. The application still needed better query validation, indexing, data-integrity protection, and safeguards around update and delete operations. I also wanted to improve how information was retrieved from MongoDB and how database-specific failures were handled. This gave me a way to continue improving the same artifact while showing a different set of skills related specifically to databases.
+
+### Original Artifact 
+The original Python CRUD Module showed the basic connection between a Python application and MongoDB. It allowed the application to create, read, update, and delete animal records, which gave me my first experience with backend database operations. When I went back to the project during the capstone, I noticed that the original version was mainly focused on getting the CRUD operations to function. It had hardcoded database credentials and did not have the validation, logging, query safeguards, or database protections that I later added. This original version gives me a starting point to show how much the project changed throughout the capstone.
+
+Security Note: Credentials in the original artifact were redacted to prevent sensitive information from being exposed through the public ePortfolio. Other than the redacted credential values, the files represent the original implementation.
+
+[View Original CRUD Source Code](CRUD_Python_Module.pyw) 
+
+### Software Design & Engineering Enhancement 
+I had already built a Python CRUD project for Software Design and Engineering, so using the same project for the Database enhancement had an impact on how I wanted the application to operate. I had to switch my mindset and focus mainly on the database side while still keeping the improvements I had already made, including environment variables and authentication, validation, logging, improved error handling, and unit testing. Instead of removing those improvements for Category Three, I kept them and used that enhanced version as my new starting point. This allowed me to focus specifically on the database layer without taking the application backward or repeating the same enhancement. It also made the process less confusing because I could continue building on the work I had already completed instead of making unnecessary changes between the Software Design and Engineering and Database versions.
+
+[View Enhanced CRUD Source Code](CRUD_Python_Module.py)
+
+### Final Database Enhancement
+For the final Database enhancement, I focused more on what happens before information reaches MongoDB and how database operations could be made safer and more reliable. I added an index on animal_id to support more efficient lookups and created query_check() to validate MongoDB queries before they are used. I also added protections against empty update and delete queries because those operations could affect more records than intended.
+
+[View Final Database Enhanced Source](Database_Enhanced/CRUD_Python_Module.py)
+
+[View Database Enhancement Tests](Database_Enhanced/database_tests.py) 
+
+Another challenge involved data validation. My original data_check() method expected a complete animal record, but an update may only need to change one field. I did not want someone to have to provide the entire animal record just to update something such as the age. Because of this, I kept the complete validation for create() and used partial validation in update() so that only the fields being changed are checked. I also added optional projection to read() so the application can request only the fields it needs, along with MongoDB-specific ConnectionFailure and OperationFailure handling.
+
+**Key Enhancements:**
+
+- Added an index on animal_id
+
+- Added MongoDB query validation through query_check()
+
+- Added stronger data-integrity checks
+
+- Protected update and delete operations from empty queries
+
+- Added separate validation for partial updates
+
+- Added optional projection to read()
+
+- Added MongoDB-specific ConnectionFailure handling
+
+- Added MongoDB-specific OperationFailure handling
+
+- Created database_tests.py using controlled temporary records
+
+- Preserved secure environment-based database configuration from the Software Engineering enhancement
+
+### Skills Demonstrated 
+One of the most challenging things I learned from this enhancement was that database security is not only about protecting a username and password. I also had to think about protecting the information stored inside the database. For example, an empty query means something completely different depending on the CRUD operation. For example, an empty read might potentially return records, but an empty update or delete could unexpectedly change or remove many records. Realizing the difference made me cautious and had me put more thought into each database operation, so I am not blindly using the same validation everywhere.
+
+I also had to make decisions without having access to my original AAC dataset; my old course for it provided Codio. I considered making the animal_id index unique, but I could not check that every existing animal_id was unique. Instead of making that guess, I had to just stick with the regular index. In addition, I created database_tests.py with temporary animal records so I could still test the database enhancement without having to depend on the missing original dataset. That experience helped me understand that testing does not always mean proving that an operation succeeds. Some of my successful tests were actually proving that unsafe or invalid operations were correctly rejected
+
+** Technical Skills**
+
+- Python
+
+- MongoDB
+
+- PyMongo
+
+- CRUD database operations
+
+- Database Indexing
+
+- Query validation
+
+- Data-integrity validation
+
+- Partial-update validation
+
+- Query projection
+
+- MongoDB exception handling
+
+- Secure environment configuration
+
+- Database testing
+
+### Enhancement Narrative 
+
+
+
+
+
+
+ 
+
+
+
