@@ -25,7 +25,7 @@ Python CRUD Module project in CS 340: Client/Server Development has shown how an
 ### Original Artifact
 The original artifact had the basic CRUD operations needed to create, read, update, and delete animal records within a MongoDB database. Although the program was functional for the original CS 340 assignment, revisiting the code showed areas that could be improved in its structure, security, validation, logging, and testing. One huge issue was that the database credentials were hardcoded directly into the original source code. Reviewing these limitations gave me the starting point for the Software Design and Engineering enhancement.
 
-**Security Note:"" Credentials were redacted due to public portfolio publication exposure. Despite the sensitive credential values, the files still represent the original implementations.
+**Security Note:** Credentials were redacted due to public portfolio publication exposure. Despite the sensitive credential values, the files still represent the original implementations.
 
 [View Original CRUD Source Code](CRUD_Python_Module.pyw) 
 
