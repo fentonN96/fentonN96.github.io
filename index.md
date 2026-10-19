@@ -186,7 +186,7 @@ One of the most challenging things I learned from this enhancement was that data
 
 I also had to make decisions without having access to my original AAC dataset; my old course for it provided Codio. I considered making the animal_id index unique, but I could not check that every existing animal_id was unique. Instead of making that guess, I had to just stick with the regular index. In addition, I created database_tests.py with temporary animal records so I could still test the database enhancement without having to depend on the missing original dataset. That experience helped me understand that testing does not always mean proving that an operation succeeds. Some of my successful tests were actually proving that unsafe or invalid operations were correctly rejected
 
-** Technical Skills**
+**Technical Skills**
 
 - Python
 
